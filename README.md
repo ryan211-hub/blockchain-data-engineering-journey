@@ -13,7 +13,7 @@
 
 | 项目 | 当前进度 | 文档 |
 | --- | --- | --- |
-| Dune Spellbook | Windows 开发环境搭建完成；dbt deps 与 dbt compile 成功 | [项目进度](projects/spellbook/README.md) · [环境搭建](projects/spellbook/01-environment-setup.md) |
+| Dune Spellbook | 环境搭建完成；Uniswap V3 核心模型阅读完成；真实数据验证待开展 | [项目进度](projects/spellbook/README.md) · [环境搭建](projects/spellbook/01-environment-setup.md) · [DEX 模型分析](projects/spellbook/02-dex-model-analysis.md) |
 
 ## 仓库边界与记录原则
 
