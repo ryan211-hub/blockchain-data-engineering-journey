@@ -10,12 +10,14 @@
 - [Windows 开发环境搭建记录](01-environment-setup.md)
 - [DEX Swap 模型分析：Uniswap V3 到美元估值](02-dex-model-analysis.md)
 - [Notion 模型阅读记录](https://app.notion.com/p/40719faa63d681a4bc4ce7e6be731017)
+- [2026-10-29：Uniswap V3 seed 与链上 Swap 人工核对](2026-10-29-swap-seed-verification.md)
+- [Notion 单条 Swap 核对记录](https://app.notion.com/p/40819faa63d68158b992c1484d40ff30)
 
 本目录保存个人学习进度，不将个人日志写入 Spellbook 上游项目或本地开发目录。
 
 ## 当前进度
 
-环境搭建结果来自此前记录；2026-10-28 新增核心模型阅读记录。本次文档更新未重新运行 dbt 命令。
+环境搭建结果来自此前记录；2026-10-28 完成核心模型阅读，2026-10-29 完成一条 seed 的链上人工核对。本次文档更新未重新运行 dbt 命令。
 
 | 阶段 | 状态 | 结果 |
 | --- | --- | --- |
@@ -26,12 +28,13 @@
 | dbt deps | 已完成 | 依赖安装成功，退出码 0 |
 | dbt compile | 已完成 | 本地编译成功，退出码 0；manifest.json 存在 |
 | DEX Swap 核心模型阅读 | 已完成 | 从 Uniswap V3 base 到 Ethereum 汇总、metadata 与美元估值；已读源码及已有编译 SQL，未执行数据 tests |
-| 真实链上查询与数据质量验证 | 待开展 | 本地编译结果不能作为数据验证通过的证据 |
+| 单条 seed 与链上字段人工核对 | 已完成 | 学习者提供 Etherscan 事件与合约读取结果；买卖地址、raw amount、区块号及事件定位与 seed 一致，并换算数量 |
+| Dune 查询与模型数据质量验证 | 待开展 | 未读取 Dune 模型实际输出，未执行 dbt tests；人工核对与本地编译不等于模型数据验证通过 |
 | 开源贡献 PR | 待开展 | 后续选定具体问题并按项目流程验证、提交 |
 
 ## 下一步
 
-1. 在具备 Dune 查询条件后，选择一条真实 Swap 或短日期窗口，核对源事件、池信息、base 输出及美元金额。
-2. 单独记录查询与数据质量验证证据；不预设模型存在 Bug。
-3. 继续学习 `dex.trades` 跨链汇总与 tests 的详细实现。
+1. 逐段阅读 seed test 实现，理解定位记录、匹配次数、字段比较与失败报告。
+2. 在具备 Dune 查询条件后核对源表、模型实际输出及美元金额，单独记录证据；不预设 Bug。
+3. 继续学习 `dex.trades` 跨链汇总。
 4. 根据证据选择具体 Issue，完成必要验证后参与开源贡献。
