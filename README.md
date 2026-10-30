@@ -13,7 +13,7 @@
 
 | 项目 | 当前进度 | 文档 |
 | --- | --- | --- |
-| Dune Spellbook | 核心模型阅读完成；一条 Swap 的 seed 与链上字段人工核对完成；Dune 模型输出验证待开展 | [项目进度](projects/spellbook/README.md) · [环境搭建](projects/spellbook/01-environment-setup.md) · [DEX 模型分析](projects/spellbook/02-dex-model-analysis.md) · [单条 Swap 核对](projects/spellbook/2026-10-29-swap-seed-verification.md) |
+| Dune Spellbook | 核心模型与 seed test 基础阅读完成；下一课回到跨链 lineage；Dune 模型输出验证待开展 | [项目进度](projects/spellbook/README.md) · [环境搭建](projects/spellbook/01-environment-setup.md) · [DEX 模型分析](projects/spellbook/02-dex-model-analysis.md) · [单条 Swap 核对](projects/spellbook/2026-10-29-swap-seed-verification.md) · [测试与学习路径](projects/spellbook/2026-10-30-dbt-tests-and-learning-path.md) |
 
 ## 仓库边界与记录原则
 
