@@ -13,7 +13,7 @@
 
 | 项目 | 当前进度 | 文档 |
 | --- | --- | --- |
-| Dune Spellbook | 跨链接入与字段接口基础学习完成；分区初步了解、增量更新待展开；Dune 模型输出验证待开展 | [项目进度](projects/spellbook/README.md) · [环境搭建](projects/spellbook/01-environment-setup.md) · [DEX 模型分析](projects/spellbook/02-dex-model-analysis.md) · [单条 Swap 核对](projects/spellbook/2026-10-29-swap-seed-verification.md) · [测试与学习路径](projects/spellbook/2026-10-30-dbt-tests-and-learning-path.md) · [跨链接入](projects/spellbook/2026-11-02-cross-chain-integration.md) |
+| Dune Spellbook | 跨链接入与增量窗口概念讨论已收束；下一课核查项目增量宏；Dune 模型输出验证待开展 | [项目进度](projects/spellbook/README.md) · [环境搭建](projects/spellbook/01-environment-setup.md) · [DEX 模型分析](projects/spellbook/02-dex-model-analysis.md) · [单条 Swap 核对](projects/spellbook/2026-10-29-swap-seed-verification.md) · [测试与学习路径](projects/spellbook/2026-10-30-dbt-tests-and-learning-path.md) · [跨链接入](projects/spellbook/2026-11-02-cross-chain-integration.md) · [增量窗口与回填](projects/spellbook/2026-11-02-incremental-window-and-backfill.md) |
 
 ## 仓库边界与记录原则
 
