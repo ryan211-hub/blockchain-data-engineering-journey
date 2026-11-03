@@ -18,6 +18,8 @@
 - [Notion 跨链接入记录](https://app.notion.com/p/40c19faa63d68192b25cdc77c72ac327)
 - [2026-11-02：增量窗口与历史回填小课题收束](2026-11-02-incremental-window-and-backfill.md)
 - [Notion 增量窗口与回填记录](https://app.notion.com/p/40c19faa63d68129afd7c624d08ae73b)
+- [2026-11-03：incremental_predicate 源码与两处调用](2026-11-03-incremental-predicate.md)
+- [Notion 增量宏源码记录](https://app.notion.com/p/40d19faa63d681a7b885d68c6ced9361)
 
 本目录保存个人学习进度，不将个人日志写入 Spellbook 上游项目或本地开发目录。
 
@@ -38,14 +40,14 @@
 | Seed test 基础源码阅读 | 已完成 | 理解 YAML 绑定、匹配计数、字段比较、失败报告、唯一性与覆盖边界；仅阅读，未执行 tests |
 | Cross-chain integration 基础 | 已学习并问答核对 | 链名单 → ref() → 各链模型 → dex.trades；字段接口、接入与质量区别、blockchain 匹配范围；不代表长期记忆或真实数据验证通过 |
 | Incremental window / backfill 概念讨论 | 已收束 | 区分源读取窗口、目标匹配条件、独立回填与临时改窗口；通用数据处理原理不再反复测试 |
-| Spellbook 增量实现 | 下一课，未核查 | 核查 incremental_predicate() 宏、生成条件与源/目标调用；不把概念讨论当作项目实现验证 |
+| Spellbook 增量实现 | 本课源码阅读完成 | 宏表达式、DEX 默认 3 / day 参数来源、源筛选与 MERGE ON 目标谓词、CI 单独分支；未核查运行参数，未编译或执行 |
 | Dune 查询与模型数据质量验证 | 待开展 | 未读取 Dune 模型实际输出，未执行 dbt tests；人工核对与本地编译不等于模型数据验证通过 |
 | 开源贡献 PR | 待开展 | 后续选定具体问题并按项目流程验证、提交 |
 
 ## 下一步
 
 1. 测试专题基础阅读告一段落，不继续扩展假设性诊断 SQL 或直接决定补充 seed。
-2. 增量窗口与历史回填概念讨论先总结同步；完成本地审核、提交推送与 Notion 发布状态更新后，再核查 Spellbook 的 `incremental_predicate()` 宏及源/目标调用。
+2. `incremental_predicate()` 小课题先总结同步；完成本地审核、提交推送与 Notion 发布状态更新后，再按既有 contribution readiness 方向明确下一小课题，不自动扩展回填操作或其他 merge 机制。
 3. 架构主线读完后学习 contribution readiness：筛选适合首次贡献的任务，阅读 Issue 与 CI；根据证据选择具体问题。
 4. 真实数据验证保持待办：具备 Dune 查询条件后核对源表、模型输出及美元金额；不预设 Bug，不把静态阅读标记为验证通过。
 5. 聚焦项目特有实现，不反复测试熟悉的 SQL、数据关系、时间窗口、merge 与 backfill 原理。必要问题必须交代完整前提，不为互动而提问；中文为主，保留必要技术英文。
