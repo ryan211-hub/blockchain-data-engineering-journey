@@ -47,8 +47,22 @@
 ## 下一步
 
 1. 测试专题基础阅读告一段落，不继续扩展假设性诊断 SQL 或直接决定补充 seed。
-2. `incremental_predicate()` 小课题先总结同步；完成本地审核、提交推送与 Notion 发布状态更新后，再按既有 contribution readiness 方向明确下一小课题，不自动扩展回填操作或其他 merge 机制。
+2. `incremental_predicate()` 小课题源码阅读已完成；本次复核记录先展示 diff 并完成审核发布，再回到 contribution readiness。不重开测试基础，也不自动扩展回填操作或其他 merge 机制。
 3. 架构主线读完后学习 contribution readiness：筛选适合首次贡献的任务，阅读 Issue 与 CI；根据证据选择具体问题。
 4. 真实数据验证保持待办：具备 Dune 查询条件后核对源表、模型输出及美元金额；不预设 Bug，不把静态阅读标记为验证通过。
 5. 聚焦项目特有实现，不反复测试熟悉的 SQL、数据关系、时间窗口、merge 与 backfill 原理。必要问题必须交代完整前提，不为互动而提问；中文为主，保留必要技术英文。
 6. 固定课题完成流程：总结已学与待查事项 → 保存 Notion、展示 GitHub 本地 diff → 用户确认后 commit / push → 更新发布状态 → 再进入新知识点。
+
+## 2026-11-05｜学习进度复核与重复学习纠正
+
+本轮回顾了 Uniswap V3 入口模型、Swap 与 PoolCreated 的 JOIN、买卖方向、外层 SELECT 和增量更新。对照已有学习目录后确认：这是复习，不作为新章节完成。
+
+- 2026-10-30 已学测试基础：YAML 绑定、seed 匹配、字段比较、失败报告、唯一性与覆盖边界；已讨论 NULL-safe 比较不能替代 not_null，不宣称逐列检查过所有非空配置。
+- 2026-11-02 已学跨链汇总基础；2026-11-03 已完成增量宏源码阅读。
+- 纠正此前建议：不再从 schema YAML 重开测试专题。已有记录指向 `dbt_subprojects/dex/models/trades/ethereum/_schema.yml`，不是入口模型所在的 platforms 目录。
+- 后续继续前先核对目录和 checkpoint；下一阶段回到 contribution readiness，聚焦首次贡献任务筛选、Issue 与 CI 阅读。此前 Issue 调查状态本轮未重新核对，不标记为已复现或已修复。
+- 本轮仅阅读本地文件；未安装依赖、未运行 dbt、未查询真实 Dune 数据。模型输出、实际 tests 与数据质量验证继续待办。
+
+依据：本次对话与本目录的 README、2026-10-30 测试记录、2026-11-02 跨链接入记录、2026-11-03 增量宏记录。
+
+Notion 已保存到 [Spellbook 开源实践总目录](https://app.notion.com/p/40619faa63d6818896adc97d5fe42244)；本次 Markdown 更新在本地准备，按既有流程展示 diff、经用户确认后 commit / push。

@@ -13,7 +13,7 @@
 
 | 项目 | 当前进度 | 文档 |
 | --- | --- | --- |
-| Dune Spellbook | 增量宏、默认参数与源/目标调用的源码阅读完成；本小课题待审核发布；Dune 模型输出验证待开展 | [项目进度](projects/spellbook/README.md) · [环境搭建](projects/spellbook/01-environment-setup.md) · [DEX 模型分析](projects/spellbook/02-dex-model-analysis.md) · [单条 Swap 核对](projects/spellbook/2026-10-29-swap-seed-verification.md) · [测试与学习路径](projects/spellbook/2026-10-30-dbt-tests-and-learning-path.md) · [跨链接入](projects/spellbook/2026-11-02-cross-chain-integration.md) · [增量窗口与回填](projects/spellbook/2026-11-02-incremental-window-and-backfill.md) · [增量宏源码](projects/spellbook/2026-11-03-incremental-predicate.md) |
+| Dune Spellbook | 2026-11-05 已复核学习进度：测试、跨链与增量宏基础已学；本次复核待审核发布，下一阶段回到 contribution readiness；真实数据验证待开展 | [项目进度](projects/spellbook/README.md) · [环境搭建](projects/spellbook/01-environment-setup.md) · [DEX 模型分析](projects/spellbook/02-dex-model-analysis.md) · [单条 Swap 核对](projects/spellbook/2026-10-29-swap-seed-verification.md) · [测试与学习路径](projects/spellbook/2026-10-30-dbt-tests-and-learning-path.md) · [跨链接入](projects/spellbook/2026-11-02-cross-chain-integration.md) · [增量窗口与回填](projects/spellbook/2026-11-02-incremental-window-and-backfill.md) · [增量宏源码](projects/spellbook/2026-11-03-incremental-predicate.md) |
 
 ## 仓库边界与记录原则
 
